@@ -2,8 +2,6 @@ import streamlit as st
 st.header('Jogando uma moeda')
 st.write('Ainda não é um aplicativo funcional. Em construção.')
 
-import streamlit as st
-
 st.header('Jogando uma moeda')
 
 number_of_trials = st.slider('Número de tentativas?', 1, 1000, 10)
@@ -46,8 +44,8 @@ start_button = st.button('Executar')
 if start_button:
     st.write(f'Executando o experimento de {number_of_trials} tentativas.')
     
-    import scipy.stats
-import streamlit as st
+import scipy.stats
+
 import time
 
 st.header('Jogando uma moeda')
@@ -79,10 +77,8 @@ if start_button:
     st.write(f'Executando o experimento de {number_of_trials} tentativas.')
     mean = toss_coin(number_of_trials)
     
-    import pandas as pd
-import scipy.stats
-import streamlit as st
-import time
+
+import pandas as pd
 
 # estas são variáveis persistentes preservadas à medida que o Streamlin executa novamente esse script
 if 'experiment_no' not in st.session_state:
@@ -120,10 +116,6 @@ if start_button:
     st.write(f'Executando o experimento de {number_of_trials} tentativas.')
     mean = toss_coin(number_of_trials)
     
-    import pandas as pd
-import scipy.stats
-import streamlit as st
-import time
 
 # estas são variáveis persistentes preservadas à medida que o Streamlin executa novamente esse script
 if 'experiment_no' not in st.session_state:
